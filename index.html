@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./style.css">
+  <title>FashionFlick</title>
+  <script src="./js.js" async></script>
+</head>
+
+<body>
+
+  <section class="header">
+    <div class="logo">
+      <h1>FASHION-FLICK</h1>
+
+    </div>
+    <ul>
+      <nav id="sidebar">
+        <li><a class="active" href="./index.html">home</a></li>
+        <li><a href="">shop</a></li>
+        <li><a href="">contact</a></li>
+      </nav>
+      <div class="btns">
+        <li><a id="logmenubtn"><i class="fa-solid fa-user"></i></a></li>
+        <li><a id="cartBtn"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        <li><a id="menubtn" onclick="sideBar()"><i class="fa-solid fa-bars"></i></a></li>
+      </div>
+    </ul>
+  </section>
+
+
+
+
+  <section class="hero">
+    <img src="./img/Rich Style Fashion.jpg" alt="">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">Unleash Your Style with <span>FASHION-FLICK</span></h1>
+      <p class="hero-subtitle">Discover the latest trends and elevate your wardrobe with our Fall Collection.</p>
+      <div class="hero-buttons">
+        <a href="#shop" class="btn primary-btn">Explore Collections</a>
+        <a href="./about-section/index.html" class="btn secondary-btn">More About us</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="login-form">
+    <div class="container">
+      <div class="logreg-btn">
+        <a  onclick="login()">Login</a>
+        <a  onclick="register()">Register</a>
+        <hr id="indicator">
+      </div>
+
+      <form id="login">
+        <input type="text" placeholder="Username" required>
+        <input type="password" placeholder="Password" required>
+
+        <span>forgot password?</span>
+        <button type="submit" id="btn">log in</button>
+
+      </form>
+
+      <form id="register">
+        <input type="text" placeholder="Username" required>
+        <input type="email" placeholder="email" required>
+        <input type="password" placeholder="password" required>
+
+        <button type="submit" id="btn">Register</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="cart-tab">
+    <h1>shopping cart</h1>
+
+    <div class="cart-items">
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <div class="total">
+
+      <div id="display">
+        <p>00.00$</p>
+      </div>
+      <a  class="buy">pay</a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="featured">
+    <div class="title">
+      <h1>featured Product</h1>
+      <p>our featured collection—timeless styles and trendy essentials!</p>
+    </div>
+    <div class="container">
+      <div class="swiper-wrapper">
+
+
+        <div class="pro-container">
+
+          <div class="product">
+            <img class="image" src="./img/product/Basic men's T-shirt - Basic men's T-shirt.jpg" alt="">
+            <div class="discription">
+              <span>zara</span>
+              <h5 class="name">t-shirt</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4 class="price">20.0$</h4>
+              <a class="add-to-cart"><i class="fas fa-cart-shopping"></i></a>
+            </div>
+
+          </div>
+
+
+          <div class="product">
+            <img class="image" src="./img/product/Men's Checkered Long Sleeve Button Shirt - Navy Blue _ L - AnotherChil.jpg" alt="">
+            <div class="discription">
+              <span>brand</span>
+              <h5 class="name">long sleeve shirt</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4 class="price">100$</h4>
+              <a class="add-to-cart"><i class="fas fa-cart-shopping"></i></a>
+            </div>
+
+          </div>
+          <div class="product">
+            <img class="image" src="./img/product/Rugby Shirt _ Kotn.jpg" alt="">
+            <div class="discription">
+              <span>brand</span>
+              <h5 class="name">rugby shirt </h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4 class="price">80$</h4>
+              <a class="add-to-cart"><i class="fas fa-cart-shopping"></i></a>
+            </div>
+
+          </div>
+
+          <div class="product">
+            <img class="image" src="./img/product/Cargo pants- a must!.jpg" alt="">
+            <div class="discription">
+              <span>brand</span>
+              <h5 class="name">cargo pant</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4 class="price">50.99$</h4>
+              <a class="add-to-cart"><i class="fas fa-cart-shopping"></i></a>
+            </div>
+
+          </div>
+
+          <div class="product">
+            <img class="image" src="./img/product/Fenmore Multifunction Black Stainless Steel Watch.jpg" alt="">
+            <div class="discription">
+              <span>brand</span>
+              <h5 class="name">watch</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4 class="price">150.99$</h4>
+              <a class="add-to-cart"><i class="fas fa-cart-shopping"></i></a>
+            </div>
+
+          </div>
+
+          <div class="product">
+            <img class="image" src="./img/product/Ezra Black Regular Fit Boys Dress Pants - 8.jpg" alt="">
+            <div class="discription">
+              <span>brand</span>
+              <h5 class="name">dress Pants</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4 class="price">90.99$</h4>
+              <a class="add-to-cart"><i class="fas fa-cart-shopping"></i></a>
+            </div>
+
+          </div>
+
+          <div class="product">
+            <img class="image" src="./img/product/Nike Air Force 1 Low '07 (White) - 8_5.jpg" alt="">
+            <div class="discription">
+              <span>brand</span>
+              <h5 class="name">nike air force</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4 class="price">200.00$</h4>
+              <a class="add-to-cart"><i class="fas fa-cart-shopping"></i></a>
+            </div>
+
+          </div>
+
+          <div class="product">
+            <img class="image" src="./img/product/cap.jpg">
+            <div class="discription">
+              <span>brand</span>
+              <h5 class="name">cap</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4 class="price">50.09$</h4>
+              <a class="add-to-cart"><i class="fas fa-cart-shopping"></i></a>
+            </div>
+
+
+
+
+
+
+
+
+
+            
+
+          </div>
+
+
+
+          
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <button><a href="#">Explore More</a></button>
+  </section>
+
+
+
+
+
+
+
+
+  <section class="blog-section">
+
+    <div class="container">
+
+      <div class="blog-grid">
+        <!-- Blog 1 -->
+        <div class="blog-card">
+          <div class="blog-image">
+            <img src="./img/The Best Fall Fashion Trends for 2024.jpg" alt="Fashion Trends 2024">
+          </div>
+          <div class="blog-content">
+            <h3 class="blog-title">Fashion Trends 2024</h3>
+            <p class="blog-excerpt">Discover the top trends to look out for in the upcoming year.</p>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+        </div>
+
+        <!-- Blog 2 -->
+        <div class="blog-card">
+          <div class="blog-image">
+            <img src="./img/FRANC _ Sustainable Clothing Basics, Ethically Made in Canada.jpg"
+              alt="Sustainable Fashion">
+          </div>
+          <div class="blog-content">
+            <h3 class="blog-title">Sustainable Fashion</h3>
+            <p class="blog-excerpt">Explore how sustainability is shaping the future of fashion.</p>
+            <a href="" class="read-more">Read More</a>
+          </div>
+        </div>
+
+        <!-- Blog 3 -->
+        <div class="blog-card">
+          <div class="blog-image">
+            <img src="./img/The inscription REVOLUTION for printing, clothing, t-shirts, sweatshirts, etc_.jpg"
+              alt="Streetwear Revolution">
+          </div>
+          <div class="blog-content">
+            <h3 class="blog-title">Streetwear Revolution</h3>
+            <p class="blog-excerpt">From underground culture to mainstream, streetwear is taking over.</p>
+            <a href="" class="read-more">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--register section-->
+
+  <section class="register-section">
+    <div class="register-container">
+      <h2>Stay Tuned for Latest Items & Promotions!</h2>
+      <p>Sign up now to receive exclusive updates about new arrivals, special discounts, and fashion trends from Fashion
+        Flick.</p>
+      <form class="register-form">
+
+        <a  onclick="loginMenu()">Register Now</a>
+      </form>
+    </div>
+  </section>
+
+
+
+
+
+  <section class="events-section">
+
+    <h2 class="section-title">Upcoming Events & Campaigns</h2>
+    <div class="events-container">
+      
+  
+      <div class="event-card">
+        <div class="event-image" style="background-image: url('./img/@franisaez.jpg');"></div>
+        <div class="event-details">
+          <h3>Fall 2024 Collection Launch</h3>
+          <p>Join us for the grand launch of the Fall 2024 collection. Discover the latest trends in fashion.</p>
+          <div class="event-meta">
+            <span><i class="fas fa-calendar-alt"></i> October 30, 2024</span>
+            <span><i class="fas fa-map-marker-alt"></i> Paris, France</span>
+          </div>
+          <button class="cta-button">RSVP Now</button>
+        </div>
+      </div>
+  
+      <div class="event-card">
+        <div class="event-image" style="background-image: url('./img/DALL·E\ 2024-10-15\ 19.41.29\ -\ A\ stylish\ fashion\ event\ setting\ with\ a\ runway\ and\ audience.\ The\ background\ shows\ bright\ spotlights\ illuminating\ the\ stage\,\ and\ models\ walking\ confiden.webp');"></div>
+        <div class="event-details">
+          <h3>Fashion Flick Giveaway</h3>
+          <p>Participate in our giveaway and stand a chance to win exclusive fashion accessories.</p>
+          <div class="countdown">
+            <span class="days">10</span> Days |
+            <span class="hours">15</span> Hrs |
+            <span class="minutes">45</span> Min |
+            <span class="seconds">30</span> Sec
+          </div>
+          <button class="cta-button">Enter Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Fashion Flick</h3>
+        <p>Your daily dose of fashion trends and styling tips.</p>
+      </div>
+  
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Men's Fashion</a></li>
+          <li><a href="#">Women's Fashion</a></li>
+          <li><a href="#">Accessories</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-column">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href=""><i class="fab fa-facebook-f"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+          <a href=""><i class="fab fa-pinterest"></i></a>
+        </div>
+      </div>
+  
+      <div class="footer-column">
+        <h4>Contact Us</h4>
+        <p>Email: contact@fashionflick.com</p>
+        <p>Phone: +999-999-999</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Fashion Flick. All rights reserved.</p>
+      <h2>created by : <span> Elaichi Abderrahman</span></h2>
+    </div>
+  </footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+</body>
+
+</html>
